@@ -56,7 +56,7 @@ static void MX_ADC_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+uint16_t DenemeGithub=0;
 /* USER CODE END 0 */
 
 /**

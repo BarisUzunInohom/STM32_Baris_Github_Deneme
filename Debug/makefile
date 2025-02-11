@@ -60,8 +60,8 @@ all: main-build
 main-build: STM32_Baris_Github_Deneme.elf secondary-outputs
 
 # Tool invocations
-STM32_Baris_Github_Deneme.elf STM32_Baris_Github_Deneme.map: $(OBJS) $(USER_OBJS) C:\Users\abc\Documents\Projects\STM32_Baris_Github_Deneme\STM32F030C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "STM32_Baris_Github_Deneme.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"C:\Users\abc\Documents\Projects\STM32_Baris_Github_Deneme\STM32F030C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_Baris_Github_Deneme.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+STM32_Baris_Github_Deneme.elf STM32_Baris_Github_Deneme.map: $(OBJS) $(USER_OBJS) C:\Users\abc\Documents\Projects\STM32_Github\STM32_Baris_Github_Deneme\STM32F030C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "STM32_Baris_Github_Deneme.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"C:\Users\abc\Documents\Projects\STM32_Github\STM32_Baris_Github_Deneme\STM32F030C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_Baris_Github_Deneme.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
